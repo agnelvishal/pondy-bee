@@ -218,6 +218,16 @@ section {
     font-style: italic;
 }
 
+.category-art {
+    display: block;
+    margin: 0 auto 2rem;
+    width: 250px;
+    height: auto;
+    opacity: 0.8;
+    filter: drop-shadow(0 0 10px rgba(255,255,255,0.05));
+    border-radius: 20px;
+}
+
 .products-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
