@@ -100,6 +100,18 @@ nav a:hover {
     color: var(--primary-dark);
 }
 
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    color: var(--secondary);
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+header:not(.scrolled) .menu-toggle {
+    color: var(--text-light);
+}
+
 /* Hero Section */
 .hero {
     height: 100vh;
@@ -111,6 +123,12 @@ nav a:hover {
     text-align: center;
     color: var(--text-light);
     padding: 0 5%;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hero-logo {
@@ -293,11 +311,63 @@ footer {
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
+    /* Mobile Menu Styling */
+    .menu-toggle {
+        display: block;
+        z-index: 1001;
+        position: relative;
+    }
+
+    header.scrolled .menu-toggle {
+        color: var(--secondary);
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        height: 100vh;
+        background: white;
+        box-shadow: -10px 0 30px rgba(0,0,0,0.1);
+        transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        z-index: 1000;
+    }
+
+    nav.active {
+        right: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5rem;
+        width: 100%;
+    }
+
+    nav a {
+        font-size: 1.5rem;
+        color: var(--secondary) !important;
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+    }
+
     .hero h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
         flex-direction: column;
         align-items: center;
         gap: 0.5rem;
+    }
+
+    .hero-logo {
+        height: 120px;
+        margin-bottom: 1.5rem;
     }
 
     .reg-no {
@@ -308,12 +378,8 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    #main-logo {
-        height: 100px;
-    }
-
-    header.scrolled #main-logo {
-        height: 60px;
+    .logo {
+        display: none;
     }
 
     /* Could add a hamburger menu if needed */
