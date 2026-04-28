@@ -303,6 +303,22 @@ footer {
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
+    header, header.scrolled {
+        flex-direction: column;
+        padding: 1rem 5%;
+        gap: 1rem;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    nav a {
+        font-size: 0.8rem;
+    }
+
     .hero h1 {
         font-size: 2.5rem;
         flex-direction: column;
@@ -315,7 +331,7 @@ footer {
     }
 
     #main-logo {
-        height: 100px;
+        height: 80px;
     }
 
     header.scrolled #main-logo {
