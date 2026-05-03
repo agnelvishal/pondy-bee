@@ -1,5 +1,13 @@
 Read html, css and js files to understand the project.
 
+In about us page, Before `Supported & Recognized By` section create a section called Board of Members. 
+President is B. Gautham and his photo is images/gallery/gautam.jpeg
+B. Gautham is Proprietor of Iniya Bee farm and logo of Iniya is images/gallery/iniya.jpeg 
+Apart from President, there is Vice President and 5 Directors. Images for them will be added soon.
+
+
+
+---
 
 Create gallery page.
 Let images/gallery/IMG-20260503-WA0037.jpg be banner image for gallery. 
@@ -7,6 +15,10 @@ let the 5 images in images/gallery/class fodler be under the heading of GSDP Bat
 let the 5 images in images/gallery/Society_Initiation folder be under the heading of Society Initiation in gallery page.
 
 Other images in other headings will be added soon.
+
+
+Let images in images/gallery/work folder be under the heading of Work in gallery page.
+
 --
 
 about us page.
