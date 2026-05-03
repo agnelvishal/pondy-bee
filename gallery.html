@@ -90,7 +90,26 @@
             }
 
             .gallery-grid {
-                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                display: flex;
+                overflow-x: auto;
+                scroll-snap-type: x mandatory;
+                scroll-padding: 0 5%;
+                gap: 1rem;
+                padding: 0 5% 1.5rem;
+                margin: 0 -5.5%; /* Adjust to match .gallery-section padding */
+                scrollbar-width: none;
+                -ms-overflow-style: none;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            .gallery-grid::-webkit-scrollbar {
+                display: none;
+            }
+
+            .gallery-item {
+                flex: 0 0 80vw;
+                scroll-snap-align: start;
+                aspect-ratio: 4/3;
             }
         }
     </style>
