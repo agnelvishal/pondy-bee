@@ -1,5 +1,11 @@
 Read html, css and js files to understand the project.
 
+
+Create gallery page and add all the images from images/gallery folder to the gallery.
+
+--
+
+about us page.
 Create about us page.
 
 

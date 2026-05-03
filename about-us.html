@@ -40,15 +40,21 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 2rem;
+            gap: 1rem 2rem;
             font-weight: 600;
             color: var(--accent);
             padding: 0 5%;
             list-style: none;
         }
 
-        .collaborators-list li.dot {
-            display: inline-block;
+        .collaborators-list li {
+            position: relative;
+        }
+
+        .collaborators-list li:not(:last-child)::after {
+            content: '•';
+            margin-left: 2rem;
+            color: var(--accent);
         }
 
         .partner-card {
@@ -130,7 +136,7 @@
             }
 
             .about-hero h1 {
-                font-size: 2.5rem !important;
+                font-size: 2.2rem !important;
             }
 
             .partners-grid {
@@ -140,19 +146,24 @@
 
             .collaborators-list {
                 flex-direction: column;
-                gap: 1rem;
+                gap: 1.5rem;
                 align-items: center;
             }
 
-            .collaborators-list li.dot {
+            .collaborators-list li:not(:last-child)::after {
                 display: none;
             }
 
             .gsdp-details {
                 padding: 1.5rem;
-                border-radius: 10px;
-                border-left: none;
-                border-top: 4px solid var(--primary);
+                border-radius: 15px;
+                border-left: none !important;
+                border-top: 5px solid var(--primary) !important;
+            }
+            
+            section {
+                padding: 4rem 5% !important;
+                overflow-x: hidden;
             }
         }
     </style>
@@ -252,9 +263,7 @@
             <h3 style="color: var(--secondary); margin-bottom: 2rem;">Collaborating Institutions</h3>
             <ul class="collaborators-list">
                 <li>Government of Puducherry</li>
-                <li class="dot">•</li>
                 <li>Puducherry Pollution Control Committee</li>
-                <li class="dot">•</li>
                 <li>Puducherry EIACP PC HUB</li>
             </ul>
             <p style="margin-top: 2rem; font-style: italic; opacity: 0.8;">
