@@ -5,7 +5,9 @@ President is B. Gautham and his photo is images/gallery/gautam.jpeg
 B. Gautham is Proprietor of Iniya Bee farm and logo of Iniya is images/gallery/iniya.jpeg 
 Apart from President, there is Vice President and 5 Directors. Images for them will be added soon.
 
+--
 
+In bottom right, add whatsapp button 
 
 ---
 
