@@ -164,6 +164,56 @@
             color: var(--primary);
             transform: rotate(90deg);
         }
+
+        .lightbox-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.3s;
+            user-select: none;
+            z-index: 2002;
+        }
+
+        .lightbox-nav:hover {
+            background: rgba(255, 255, 255, 0.2);
+            color: var(--primary);
+        }
+
+        .prev-btn {
+            left: 30px;
+        }
+
+        .next-btn {
+            right: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .lightbox-nav {
+                width: 45px;
+                height: 45px;
+                font-size: 20px;
+                background: rgba(0, 0, 0, 0.3);
+            }
+
+            .prev-btn {
+                left: 10px;
+            }
+
+            .next-btn {
+                right: 10px;
+            }
+        }
     </style>
 </head>
 
@@ -326,7 +376,9 @@
 
     <div id="lightbox" class="lightbox">
         <span class="close-lightbox">&times;</span>
+        <div class="lightbox-nav prev-btn"><i class="fas fa-chevron-left"></i></div>
         <img class="lightbox-content" id="lightbox-img">
+        <div class="lightbox-nav next-btn"><i class="fas fa-chevron-right"></i></div>
     </div>
 
     <script src="script.js"></script>
