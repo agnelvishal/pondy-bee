@@ -1,8 +1,12 @@
 Read html, css and js files to understand the project.
 
 
-Create gallery page and add all the images from images/gallery folder to the gallery.
+Create gallery page.
+Let images/gallery/IMG-20260503-WA0037.jpg be banner image for gallery. 
+let the 5 images in images/gallery/class fodler be under the heading of GSDP Batch 2024-2025 in gallery page.
+let the 5 images in images/gallery/Society_Initiation folder be under the heading of Society Initiation in gallery page.
 
+Other images in other headings will be added soon.
 --
 
 about us page.
