@@ -36,9 +36,25 @@
             margin-top: 3rem;
         }
 
+        .collaborators-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            font-weight: 600;
+            color: var(--accent);
+            padding: 0 5%;
+        }
+
+        .collaborators-list span.dot {
+            display: inline;
+        }
+
         .partner-card {
             text-align: center;
             transition: transform 0.3s ease;
+            width: 100%;
+            max-width: 250px;
         }
 
         .partner-card:hover {
@@ -46,11 +62,13 @@
         }
 
         .partner-logo {
-            max-width: 150px;
+            max-width: 100%;
             height: auto;
+            max-height: 120px;
             margin-bottom: 1rem;
             filter: grayscale(20%);
             transition: filter 0.3s ease;
+            object-fit: contain;
         }
 
         .partner-card:hover .partner-logo {
@@ -82,23 +100,26 @@
         }
 
         .gsdp-list li {
-            margin-bottom: 0.5rem;
+            margin-bottom: 1rem;
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             gap: 10px;
         }
 
         .gsdp-list i {
             color: var(--primary);
+            margin-top: 5px;
         }
 
         .story-content {
             max-width: 900px;
             margin: 0 auto;
+            padding: 0 5%;
         }
 
         .logo-main-about {
             max-width: 250px;
+            width: 100%;
             margin-bottom: 2rem;
         }
 
@@ -107,9 +128,30 @@
                 height: 50vh;
             }
 
+            .about-hero h1 {
+                font-size: 2.5rem !important;
+            }
+
             .partners-grid {
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
                 gap: 2rem;
+            }
+
+            .collaborators-list {
+                flex-direction: column;
+                gap: 1rem;
+                align-items: center;
+            }
+
+            .collaborators-list span.dot {
+                display: none;
+            }
+
+            .gsdp-details {
+                padding: 1.5rem;
+                border-radius: 10px;
+                border-left: none;
+                border-top: 4px solid var(--primary);
             }
         }
     </style>
@@ -207,12 +249,11 @@
 
         <div style="margin-top: 4rem; text-align: center;" class="reveal">
             <h3 style="color: var(--secondary); margin-bottom: 2rem;">Collaborating Institutions</h3>
-            <div
-                style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; font-weight: 600; color: var(--accent);">
+            <div class="collaborators-list">
                 <span>Government of Puducherry</span>
-                <span>•</span>
+                <span class="dot">•</span>
                 <span>Puducherry Pollution Control Committee</span>
-                <span>•</span>
+                <span class="dot">•</span>
                 <span>Puducherry EIACP PC HUB</span>
             </div>
             <p style="margin-top: 2rem; font-style: italic; opacity: 0.8;">

@@ -36,6 +36,7 @@ h3 {
 /* Scroll Smoothing */
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 /* Header & Navigation */
