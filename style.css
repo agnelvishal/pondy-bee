@@ -240,6 +240,7 @@ section {
     box-shadow: var(--shadow);
     transition: all 0.3s ease;
     border: 1px solid rgba(255, 179, 0, 0.1);
+    cursor: pointer;
 }
 
 .product-card:hover {
