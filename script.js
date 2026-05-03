@@ -71,19 +71,16 @@ document.querySelectorAll('nav a').forEach(anchor => {
     });
 });
 
-// WhatsApp redirect for specific products
+// WhatsApp redirect for all products
 document.querySelectorAll('.product-card').forEach(card => {
     card.addEventListener('click', () => {
-        const productName = card.querySelector('h4').textContent;
+        const h4 = card.querySelector('h4');
+        if (!h4) return;
+        
+        const productName = h4.textContent;
         const phone = "916382451476";
-        
-        // Products that should redirect to WhatsApp
-        const targetProducts = ["Cashew Honey", "Honey Twigs"];
-        
-        if (targetProducts.includes(productName)) {
-            const message = `Hello! I am interested in purchasing ${productName}. Could you please provide more details?`;
-            const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
-            window.open(whatsappUrl, '_blank');
-        }
+        const message = `Hello! I am interested in purchasing ${productName}. Could you please provide more details?`;
+        const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+        window.open(whatsappUrl, '_blank');
     });
 });
