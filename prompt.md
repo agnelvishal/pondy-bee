@@ -7,7 +7,7 @@ Apart from President, there is Vice President and 5 Directors. Images for them w
 
 --
 
-In bottom right, add whatsapp button 
+In bottom right, add whatsapp button which links to https://wa.me/916382451476
 
 ---
 
