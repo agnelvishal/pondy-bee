@@ -44,10 +44,11 @@
             font-weight: 600;
             color: var(--accent);
             padding: 0 5%;
+            list-style: none;
         }
 
-        .collaborators-list span.dot {
-            display: inline;
+        .collaborators-list li.dot {
+            display: inline-block;
         }
 
         .partner-card {
@@ -143,7 +144,7 @@
                 align-items: center;
             }
 
-            .collaborators-list span.dot {
+            .collaborators-list li.dot {
                 display: none;
             }
 
@@ -249,13 +250,13 @@
 
         <div style="margin-top: 4rem; text-align: center;" class="reveal">
             <h3 style="color: var(--secondary); margin-bottom: 2rem;">Collaborating Institutions</h3>
-            <div class="collaborators-list">
-                <span>Government of Puducherry</span>
-                <span class="dot">•</span>
-                <span>Puducherry Pollution Control Committee</span>
-                <span class="dot">•</span>
-                <span>Puducherry EIACP PC HUB</span>
-            </div>
+            <ul class="collaborators-list">
+                <li>Government of Puducherry</li>
+                <li class="dot">•</li>
+                <li>Puducherry Pollution Control Committee</li>
+                <li class="dot">•</li>
+                <li>Puducherry EIACP PC HUB</li>
+            </ul>
             <p style="margin-top: 2rem; font-style: italic; opacity: 0.8;">
                 Supported by the Ministry of Environment, Forest and Climate Change, Government of India.
             </p>
