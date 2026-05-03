@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Pondy Bee - Our Story & Partners</title>
+    <meta name="description"
+        content="Learn about the origins of Pondicherry Beekeeping Co-operative Society P.854, started by GSDP students of batch 2024-2025.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .about-hero {
+            height: 60vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/WhatsApp Image 2026-04-22 at 20.37.37 (2).jpeg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .partners-section {
+            background: #fff;
+            padding: 4rem 10%;
+        }
+
+        .partners-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 3rem;
+            align-items: center;
+            justify-items: center;
+            margin-top: 3rem;
+        }
+
+        .partner-card {
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .partner-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .partner-logo {
+            max-width: 150px;
+            height: auto;
+            margin-bottom: 1rem;
+            filter: grayscale(20%);
+            transition: filter 0.3s ease;
+        }
+
+        .partner-card:hover .partner-logo {
+            filter: grayscale(0%);
+        }
+
+        .partner-name {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--secondary);
+            line-height: 1.4;
+        }
+
+        .gsdp-details {
+            background: var(--bg-light);
+            border-left: 5px solid var(--primary);
+            padding: 2rem;
+            margin-top: 2rem;
+            border-radius: 0 15px 15px 0;
+        }
+
+        .gsdp-details h3 {
+            color: var(--secondary);
+            margin-bottom: 1rem;
+        }
+
+        .gsdp-list {
+            list-style: none;
+        }
+
+        .gsdp-list li {
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .gsdp-list i {
+            color: var(--primary);
+        }
+
+        .story-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .logo-main-about {
+            max-width: 250px;
+            margin-bottom: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .about-hero {
+                height: 50vh;
+            }
+            .partners-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="header">
+        <a href="index.html" class="logo">
+            <img src="images/logo-trans.png" alt="Pondy Bee Logo" id="main-logo">
+        </a>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#products">Products</a></li>
+                <li><a href="about-us.html" class="active">About Us</a></li>
+                <li><a href="https://www.instagram.com/pondicherrybeekeeping/?hl=en" target="_blank">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <section class="about-hero">
+        <div class="reveal">
+            <h1 class="section-title" style="color: white; border-bottom: none;">Our Story</h1>
+            <p style="font-size: 1.2rem; opacity: 0.9;">Pondicherry Beekeeping Co-operative Society P.854</p>
+        </div>
+    </section>
+
+    <section class="story-section">
+        <div class="story-content reveal">
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <img src="images/logo-trans.png" alt="Pondy Bee Logo" class="logo-main-about">
+                <h2 style="color: var(--secondary); font-size: 2.5rem;">Born from Green Skills</h2>
+            </div>
+            
+            <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">
+                The <strong>Pondicherry Beekeeping Co-operative Society P.854</strong> is a testament to the power of sustainable education and environmental stewardship. Our journey began with a shared passion for preserving one of nature's most vital contributors: the honey bee.
+            </p>
+            
+            <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">
+                The society was proudly started by the dedicated students of <strong>Batch 2024-2025</strong> under the <strong>Green Skill Development Programme (GSDP)</strong>. This initiative was born out of a commitment to ethical beekeeping and the conservation of native bee species in the Pondicherry region.
+            </p>
+
+            <div class="gsdp-details">
+                <h3>Programme & Batch Details</h3>
+                <ul class="gsdp-list">
+                    <li><i class="fas fa-seedling"></i> <strong>Programme:</strong> Green Skill Development Programme (GSDP)</li>
+                    <li><i class="fas fa-bug"></i> <strong>Specialization:</strong> Apiculturist (Wild Bee) - NTFP (Non-Timber Forest Produce)</li>
+                    <li><i class="fas fa-calendar-alt"></i> <strong>Batch:</strong> 2024 - 2025</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="partners-section">
+        <h2 class="section-title reveal">Supported & Recognized By</h2>
+        
+        <div class="partners-grid reveal">
+            <!-- Government of India -->
+            <div class="partner-card">
+                <img src="images/goi.jpeg" alt="Government of India" class="partner-logo">
+                <p class="partner-name">Government of India</p>
+            </div>
+
+            <!-- Ministry of Environment -->
+            <div class="partner-card">
+                <img src="images/Ministry_of_Environment.webp" alt="Ministry of Environment, Forest and Climate Change" class="partner-logo">
+                <p class="partner-name">Ministry of Environment, Forest and Climate Change</p>
+            </div>
+
+            <!-- Puducherry Pollution Control Committee -->
+            <div class="partner-card">
+                <img src="images/Puducherry-Pollution.jpeg" alt="Puducherry Pollution Control Committee" class="partner-logo">
+                <p class="partner-name">Puducherry Pollution Control Committee</p>
+            </div>
+
+            <!-- Lifestyle for Environment -->
+            <div class="partner-card">
+                <img src="images/lifestyle-for-environment-01.jpg" alt="Lifestyle for Environment" class="partner-logo">
+                <p class="partner-name">Lifestyle for Environment (LiFE)</p>
+            </div>
+        </div>
+
+        <div style="margin-top: 4rem; text-align: center;" class="reveal">
+            <h3 style="color: var(--secondary); margin-bottom: 2rem;">Collaborating Institutions</h3>
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; font-weight: 600; color: var(--accent);">
+                <span>Government of Puducherry</span>
+                <span>•</span>
+                <span>Puducherry Pollution Control Committee</span>
+                <span>•</span>
+                <span>Puducherry EIACP PC HUB</span>
+            </div>
+            <p style="margin-top: 2rem; font-style: italic; opacity: 0.8;">
+                Supported by the Ministry of Environment, Forest and Climate Change, Government of India.
+            </p>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="reveal">
+                <div class="footer-logo">Pondicherry Beekeeping co-Operative Society</div>
+                <p>Pure. Natural. Ethical.</p>
+            </div>
+            <div class="reveal">
+                <h4>Quick Links</h4>
+                <ul style="list-style: none; margin-top: 1rem;">
+                    <li><a href="index.html" style="color: white; opacity: 0.7;">Home</a></li>
+                    <li><a href="index.html#products" style="color: white; opacity: 0.7;">Products</a></li>
+                    <li><a href="about-us.html" style="color: white; opacity: 0.7;">About Us</a></li>
+                </ul>
+            </div>
+            <div class="reveal">
+                <h4>Contact Us</h4>
+                <p style="margin-top: 1rem; opacity: 0.7;">Pondicherry, India</p>
+                <p style="opacity: 0.7;"><a href="https://www.instagram.com/pondicherrybeekeeping/?hl=en" target="_blank" style="color: white; text-decoration: none;"><i class="fab fa-instagram"></i> Instagram: @pondicherrybeekeeping</a></p>
+                <p style="opacity: 0.7;"><a href="mailto:pondybee.p854@gmail.com" style="color: white; text-decoration: none;"><i class="fas fa-envelope"></i> Email: pondybee.p854@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom reveal">
+            &copy; 2026 Pondicherry Bee-Keeping Co-operative Society. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
