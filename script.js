@@ -84,3 +84,41 @@ document.querySelectorAll('.product-card').forEach(card => {
         window.open(whatsappUrl, '_blank');
     });
 });
+
+// Gallery Lightbox Functionality
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+const galleryItems = document.querySelectorAll('.gallery-item');
+const closeLightbox = document.querySelector('.close-lightbox');
+
+if (lightbox && galleryItems.length > 0) {
+    galleryItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const img = item.querySelector('img');
+            lightboxImg.src = img.src;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Prevent scrolling
+        });
+    });
+
+    const closeLightboxFunc = () => {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = 'auto'; // Re-enable scrolling
+    };
+
+    closeLightbox.addEventListener('click', closeLightboxFunc);
+    
+    // Close on click outside the image
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) {
+            closeLightboxFunc();
+        }
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+            closeLightboxFunc();
+        }
+    });
+}
