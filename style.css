@@ -379,8 +379,32 @@ footer {
         grid-template-columns: 1fr;
     }
 
+    section {
+        padding: 4rem 5%;
+    }
+
     .logo {
         display: none;
+    }
+
+    .products-grid {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 1.5rem;
+        padding: 1rem 5% 2rem;
+        margin: 0 -5.5%; /* Counteracting section padding (5%) */
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    .products-grid::-webkit-scrollbar {
+        display: none;
+    }
+
+    .product-card {
+        flex: 0 0 280px;
+        scroll-snap-align: start;
     }
 
     /* Could add a hamburger menu if needed */

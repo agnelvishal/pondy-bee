@@ -15,12 +15,12 @@ Products.
 
 ∆ Value Added Products
 
-1.Turmeric honey
-2.Ginger honey
-3.Amla honey
-4.Garlic honey
-5.pepper honey
-6.Herbal honey
+1.Honey infused with turmeric
+2.Honey infused with ginger
+3.Honey infused with amla
+4.Honey infused with garlic
+5.Honey infused with pepper
+6.Honey infused with herbs
 
 ∆ Beeswax Products
 
