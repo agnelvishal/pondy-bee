@@ -161,6 +161,16 @@ header:not(.scrolled) .menu-toggle {
     font-family: 'Montserrat', sans-serif;
 }
 
+.hero-title .title-text {
+    display: inline;
+}
+
+.hero-title .main-title,
+.hero-title .sub-title {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
 .tamil-subtitle {
     font-size: 2rem;
     margin-bottom: 1.5rem;
@@ -367,6 +377,22 @@ footer {
         gap: 0.5rem;
     }
 
+    .hero-title .title-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.25rem;
+    }
+
+    .hero-title .main-title {
+        font-size: clamp(1.4rem, 8vw, 2.2rem);
+        white-space: nowrap;
+    }
+
+    .hero-title .sub-title {
+        font-size: clamp(1.1rem, 5.5vw, 1.5rem);
+    }
+
     .hero-logo {
         height: 120px;
         margin-bottom: 1.5rem;
@@ -374,6 +400,7 @@ footer {
 
     .reg-no {
         display: block;
+        font-size: clamp(0.9rem, 4.5vw, 1.1rem);
     }
 
     .society {
