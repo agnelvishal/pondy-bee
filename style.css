@@ -408,6 +408,10 @@ footer {
         white-space: nowrap;
     }
 
+    .mission-text {
+        font-size: 0.8rem;
+    }
+
     .society {
         grid-template-columns: 1fr;
     }
