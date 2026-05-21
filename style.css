@@ -403,6 +403,11 @@ footer {
         font-size: clamp(0.9rem, 4.5vw, 1.1rem);
     }
 
+    .tamil-subtitle {
+        font-size: clamp(1rem, 4.8vw, 1.4rem);
+        white-space: nowrap;
+    }
+
     .society {
         grid-template-columns: 1fr;
     }
